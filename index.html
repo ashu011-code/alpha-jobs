@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Jobs – Find Your Dream Job</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Alpha Jobs</h1>
+        <nav>
+            <a href="#jobs">Jobs</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Find Your Dream Job Today</h2>
+        <p>Search thousands of opportunities from top companies</p>
+
+        <input type="text" id="searchBox" placeholder="Search jobs (e.g., Developer, Manager)">
+        <button onclick="searchJobs()">Search</button>
+    </section>
+
+    <!-- Job Listings -->
+    <section id="jobs" class="jobs-section">
+        <h2>Latest Job Openings</h2>
+        <div id="jobList" class="job-list"></div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <h2>About Alpha Jobs</h2>
+        <p>Alpha Jobs connects talented individuals with top employers. We simplify job searching with a clean, fast, and user-friendly platform.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@alphajobs.com</p>
+        <p>Phone: +91 98765 43210</p>
+    </section>
+
+    <!-- Job Details Modal -->
+    <div id="jobModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalCompany"></p>
+            <p id="modalLocation"></p>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
